@@ -1,0 +1,230 @@
+{
+  "unit": [
+    {
+      "class": "com.aireadio.app.content.ContentRulesTest",
+      "name": "unheard OpenAI has priority then chronological content",
+      "passed": true
+    },
+    {
+      "class": "com.aireadio.app.content.ContentRulesTest",
+      "name": "reject insecure and credential URLs",
+      "passed": true
+    },
+    {
+      "class": "com.aireadio.app.content.ContentRulesTest",
+      "name": "dates accept RSS and Atom timezones",
+      "passed": true
+    },
+    {
+      "class": "com.aireadio.app.content.ContentRulesTest",
+      "name": "one item can be reviewed while respecting configured dates",
+      "passed": true
+    },
+    {
+      "class": "com.aireadio.app.content.ContentRulesTest",
+      "name": "heat ranks within each source rather than comparing stars with votes",
+      "passed": true
+    },
+    {
+      "class": "com.aireadio.app.content.ContentRulesTest",
+      "name": "finish unheard content before revisiting least recently heard",
+      "passed": true
+    },
+    {
+      "class": "com.aireadio.app.content.ContentRulesTest",
+      "name": "filter dates sources keywords and meaningful heat thresholds",
+      "passed": true
+    },
+    {
+      "class": "com.aireadio.app.content.ContentRulesTest",
+      "name": "failed unheard item cannot prevent playable item from entering a new cycle",
+      "passed": true
+    },
+    {
+      "class": "com.aireadio.app.content.ContentRulesTest",
+      "name": "tracking links converge without losing semantic parameters",
+      "passed": true
+    },
+    {
+      "class": "com.aireadio.app.content.FeedClientTest",
+      "name": "non-feed and malformed addresses fail independently",
+      "passed": true
+    },
+    {
+      "class": "com.aireadio.app.content.FeedClientTest",
+      "name": "RSS retains publication date title and HTML content",
+      "passed": true
+    },
+    {
+      "class": "com.aireadio.app.content.FeedClientTest",
+      "name": "GitHub retains real stars and pushed timestamp",
+      "passed": true
+    },
+    {
+      "class": "com.aireadio.app.content.FeedClientTest",
+      "name": "Anthropic cards expose headline and actual date",
+      "passed": true
+    },
+    {
+      "class": "com.aireadio.app.content.FeedClientTest",
+      "name": "Hacker News ignores unrelated stories and retains comments",
+      "passed": true
+    },
+    {
+      "class": "com.aireadio.app.content.FeedClientTest",
+      "name": "Atom selects alternate link and prefers published over updated",
+      "passed": true
+    },
+    {
+      "class": "com.aireadio.app.content.FeedClientTest",
+      "name": "missing date is visibly recorded as discovery time and unsafe links are skipped",
+      "passed": true
+    },
+    {
+      "class": "com.aireadio.app.content.HttpClientTest",
+      "name": "rate limit preserves retry deadline for repository backoff",
+      "passed": true
+    },
+    {
+      "class": "com.aireadio.app.content.HttpClientTest",
+      "name": "oversized payload is rejected before parsing",
+      "passed": true
+    },
+    {
+      "class": "com.aireadio.app.content.HttpClientTest",
+      "name": "HTTPS downgrade in final response is rejected",
+      "passed": true
+    },
+    {
+      "class": "com.aireadio.app.content.LiveFixturesTest",
+      "name": "current public source payloads still match adapters",
+      "passed": true
+    },
+    {
+      "class": "com.aireadio.app.content.SummarizerTest",
+      "name": "article extraction excludes navigation scripts and paywall prompts",
+      "passed": true
+    },
+    {
+      "class": "com.aireadio.app.content.SummarizerTest",
+      "name": "short text stays short and is never padded",
+      "passed": true
+    },
+    {
+      "class": "com.aireadio.app.content.SummarizerTest",
+      "name": "summary consists of real sentences in original order",
+      "passed": true
+    },
+    {
+      "class": "com.aireadio.app.content.SummarizerTest",
+      "name": "Chinese sentence boundaries preserve factual extracts",
+      "passed": true
+    },
+    {
+      "class": "com.aireadio.app.content.UpgradeTest",
+      "name": "domesticUnheardThenOpenaiThenOverseas",
+      "passed": true
+    },
+    {
+      "class": "com.aireadio.app.content.UpgradeTest",
+      "name": "zhidxMonthDayRolloverAndChangedPageDetection",
+      "passed": true
+    },
+    {
+      "class": "com.aireadio.app.content.UpgradeTest",
+      "name": "infoqIndexedPublicDataExtractsRealDateAndIgnoresNonAi",
+      "passed": true
+    },
+    {
+      "class": "com.aireadio.app.content.UpgradeTest",
+      "name": "customRegionAndReviewsUseDomesticPriorityButFinishAllUnheardFirst",
+      "passed": true
+    },
+    {
+      "class": "com.aireadio.app.content.UpgradeTest",
+      "name": "narrationRemovesNonSpeechContentWithoutInventingDetails",
+      "passed": true
+    },
+    {
+      "class": "com.aireadio.app.content.UpgradeTest",
+      "name": "waveWritesValidPcmWithControlledSilence",
+      "passed": true
+    },
+    {
+      "class": "com.aireadio.app.content.UpgradeTest",
+      "name": "categoriesFavorPracticalContentAndRespectFilter",
+      "passed": true
+    }
+  ],
+  "device": [
+    {
+      "class": "com.aireadio.app.playback.OfflineNarrationTest",
+      "name": "actualDownloadedModelTranslatesFactualText",
+      "passed": true
+    },
+    {
+      "class": "com.aireadio.app.playback.OfflineNarrationTest",
+      "name": "actualChineseSystemVoiceProducesPlayableWave",
+      "passed": true
+    },
+    {
+      "class": "com.aireadio.app.playback.OfflineNarrationTest",
+      "name": "missingNaturalModelFallsBackToActualSystemVoice",
+      "passed": true
+    },
+    {
+      "class": "com.aireadio.app.playback.OfflineNarrationTest",
+      "name": "actualKokoroFemaleAndMaleVoicesProducePlayableAudio",
+      "passed": true
+    },
+    {
+      "class": "com.aireadio.app.playback.RadioServiceTest",
+      "name": "waitingCanResumeAndNewContentJoinsAtBoundary",
+      "passed": true
+    },
+    {
+      "class": "com.aireadio.app.playback.RadioServiceTest",
+      "name": "replayFromPauseResetsPositionAndDoesNotCountHistoricalArticleAgain",
+      "passed": true
+    },
+    {
+      "class": "com.aireadio.app.playback.RadioServiceTest",
+      "name": "lockedScreenContinuesPlayingAndSwitchingForOneMinute",
+      "passed": true
+    },
+    {
+      "class": "com.aireadio.app.playback.RadioServiceTest",
+      "name": "failedItemIsSkippedAndOneItemLoopsAsReview",
+      "passed": true
+    },
+    {
+      "class": "com.aireadio.app.playback.RadioServiceTest",
+      "name": "lastSelectionWinsEvenWhenEarlierPreparationIgnoresCancellation",
+      "passed": true
+    },
+    {
+      "class": "com.aireadio.app.playback.RadioServiceTest",
+      "name": "selectedFailureWaitsForRetryInsteadOfPlayingSomethingElse",
+      "passed": true
+    },
+    {
+      "class": "com.aireadio.app.playback.RadioServiceTest",
+      "name": "continuousPlaybackPauseResumeSkipAndStop",
+      "passed": true
+    },
+    {
+      "class": "com.aireadio.app.playback.RadioServiceTest",
+      "name": "intentDrivenPlaybackHasMediaNotificationAndReplayAction",
+      "passed": true
+    },
+    {
+      "class": "com.aireadio.app.playback.RadioServiceTest",
+      "name": "selectedArticleBypassesOrderAndContinuesWithUnheardContent",
+      "passed": true
+    }
+  ],
+  "lint": {
+    "errors": 0,
+    "warnings": 17
+  }
+}
